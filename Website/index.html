@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="/css/Website-alpha.css"></link>
+        <title>V.A.Matthes Homepage</title>
+    </head>
+    
+    <body>
+        <canvas id="canvas1"></canvas>
+        <header>
+                <button id="logoBanner">
+                    <a href="http://127.0.0.1:3000/html/Website-alpha.html" target="_self"></a>
+                </button>
+                <button id="loginButton">LOGIN</button>
+                <button id="registButton">REGIST</button>
+            </header> 
+            
+            <iframe id="calculator" class="hideReference" src="Rechner.html"></iframe>
+            <iframe id="TicTacToe" class="hideReference" src="/Tic-Tac-Toe/Tic-Tac-Toe.html"></iframe>
+            
+            
+            <aside id="sidebar" class="hideSideBar">
+                <nav>
+                    <button id="openSidebarButton"  onclick="showSidebar()"></button>
+                    <button id="sidebarButton1" class="sidebarButtonStyle" onclick="popCalculator()">Taschenrechner</button>
+                    <button id="sidebarButton2" class="sidebarButtonStyle" onclick="popTicTacToe()">Tic-Tac-Toe</button>
+                    <button id="sidebarButton3" class="sidebarButtonStyle">Referenz 3</button>
+                    <button id="sidebarButton4" class="sidebarButtonStyle">Referenz 4</button>    
+                </nav>   
+            </aside>
+            <script src="/js/CanvasParticle.js"> </script>
+            <script src="/js/Website-alpha.js" src="/js/CanvasParticle.js"> </script>
+        </body>
+    
+    </html>

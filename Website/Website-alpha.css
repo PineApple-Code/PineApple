@@ -1,0 +1,181 @@
+body{
+    position: relative;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    margin:0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: grey;
+
+    
+}
+#canvas1{
+    display: block;
+    position: absolute;
+    pointer-events: all;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 6vh;
+    background-color: black;
+    
+}
+
+#logoBanner{
+    position: relative;
+    background-image: url("/img/banner2.jpg");
+    height: 100%; 
+    width: 20vb;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in-out 500ms;
+    border: none;
+    border-radius: 3%;
+    cursor: pointer;
+}
+#logoBanner:hover{
+    box-shadow: 0px 0px 10px 4px white;
+    transition: ease-in-out 500ms;
+
+}
+#loginButton{
+    position: absolute;
+    height: 70%;
+    width: 15vb;
+    left: 70%;
+    top: 25%;
+    background-color: inherit;
+    color: yellow;
+    cursor: pointer;
+    border: none;
+    transition: 1000ms;
+    border-radius: 10px;
+    z-index: 2;
+}
+#loginButton:hover{
+    transition: ease-in-out 500ms;
+    background-color: rgb(77, 131, 77);
+    box-shadow: 0px 0px 15px 5px rgb(136, 243, 136);
+    transform: translateY(-25%);
+}
+
+#registButton{
+    position: absolute;
+    height: 70%;
+    width: 15vb;
+    left: 80%;
+    top: 25%;
+    background-color: inherit;
+    color: yellow;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    z-index: 1;
+    
+}
+#registButton:hover{
+    transition: ease-in-out 500ms;
+    background-color: rgb(77, 131, 77);
+    box-shadow: 0px 0px 15px 5px rgb(136, 243, 136);
+    transform: translateY(-25%);
+
+}
+
+#openSidebarButton{
+    position: absolute;
+    left: 20vb;
+    top: 50vh;
+    width: 35%;
+    height:6%;
+    visibility: visible;
+    background-color: rgb(151, 147, 147); 
+    box-shadow: 0px 0px 15px 5px rgb(251, 252, 251);
+    transition: ease-in-out 500ms;
+    background-image: url("https://icon-library.com/images/sidebar-icon/sidebar-icon-17.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    z-index: 3;
+}
+#openSidebarButton:hover{
+    background-color: rgb(77, 131, 77); 
+    box-shadow: 0px 0px 15px 5px rgb(136, 243, 136);
+    transition: ease-in-out 500ms;
+}
+aside{
+    position: absolute;
+    opacity: 1;
+    top: 6vh;
+    background-color: rgba(52, 59, 61, 0.3);
+    width: 20vb;
+    height: 88vh;
+    transition: 500ms;
+    z-index: 2;
+}
+
+.hideSideBar{
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: 500ms;
+    
+
+}
+
+nav{
+    display: grid;
+    align-content: center;
+    
+    grid-gap: 50px;
+    
+    height: 100%;
+    width: 100%;
+    
+}
+a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+.sidebarButtonStyle {
+    width: 100%;
+    background-color: inherit;
+    font-size: 15px;
+
+    color: yellow;
+    cursor: pointer;
+    border: none;
+    transition: 500ms;
+    border-radius: 10px;
+}
+.sidebarButtonStyle:hover {
+    transition: ease-in-out 500ms;
+    background-color: rgb(77, 131, 77);
+    box-shadow: 0px 0px 15px 5px rgb(136, 243, 136);
+    transform: translateY(-25%);
+}
+iframe{
+    position: absolute;
+    left: 40vw;
+    top: 25vh;
+    width: 25vw;
+    height: 50vh;
+    border: none;
+    border-radius: 3% ;
+    transition:ease-in-out 500ms;
+    box-shadow: 0px 0px 20px 1px white;
+    transform: scale(1.5);
+    z-index: 2;
+}
+.hideReference{
+    visibility: hidden;
+    box-shadow: 0px 0px 20px 1px white;
+    transition:ease-in-out 500ms;
+    transform: scale(0.01);
+}
+
+
